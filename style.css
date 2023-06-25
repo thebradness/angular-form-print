@@ -21,6 +21,10 @@
 	border: 1px dashed black;
 }
 
+.angular-form-print .dragger, .angular-form-print [class^="resizer"] {
+	display: none; /* for now, or until js is added */
+}
+
 .angular-form-print .dragger {
 	font-size: 35px;
 	text-align: center;
