@@ -1,0 +1,67 @@
+.angular-form-print {
+	z-index: 100;
+	position: fixed; 
+	top: 15px; 
+	right: 15px;
+	width: 350px; 
+	height: 750px;
+
+	margin: 15px; 
+	padding: 15px;
+	background: lightgray; 
+	border: 1px solid gray;
+	
+	overflow: scroll;
+	box-shadow: -10px 10px 15px 2px #C9C9C9
+}
+
+.angular-form-print .field-print-out {
+	padding: 5px;
+	margin: 5px 0;
+	border: 1px dashed black;
+}
+
+.angular-form-print .dragger {
+	font-size: 35px;
+	text-align: center;
+	cursor: grab;
+	user-select: none;
+}
+
+.angular-form-print [class^="resizer"] {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: white;
+	border: 2px solid black;
+	border-radius: 100%;
+	--angular-form-print-resizer-position: -10px;
+}
+
+.angular-form-print .resizer-top-left,
+.angular-form-print .resizer-bottom-right 
+{
+	cursor: nwse-resize;
+}
+
+.angular-form-print .resizer-bottom-left,
+.angular-form-print .resizer-top-right 
+{
+	cursor: nesw-resize;
+}
+
+.angular-form-print [class^="resizer-top"] {
+	top: var(--angular-form-print-resizer-position);
+}
+
+.angular-form-print [class^="resizer-bottom"] {
+	bottom: var(--angular-form-print-resizer-position);
+}
+
+.angular-form-print [class$="-left"] {
+	left: var(--angular-form-print-resizer-position);
+}
+
+.angular-form-print [class$="-right"] {
+	right: var(--angular-form-print-resizer-position);
+}
