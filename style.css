@@ -1,11 +1,6 @@
-/*asdf*/
 .angular-form-print {
 	z-index: 100;
 	position: fixed; 
-	top: 10%; 
-	right: 15px;
-	width: 350px; 
-	height: 80%;
 
 	margin: 15px; 
 	padding: 15px;
